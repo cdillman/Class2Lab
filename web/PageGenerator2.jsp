@@ -28,5 +28,15 @@
             out.println("</tr>");
             } %>
             
+            <% for(int f = 1; f < 15; f++){ %>
+            <tr> 
+                <% for (int t = 1; t < 15; t++) { %>
+                <td>
+                    <% out.println("||Row: " + f + " Col: "+ t + "||"); %>
+                </td>
+                <% } %>
+            </tr>
+            <% } %>
+            
     </body>
 </html>
